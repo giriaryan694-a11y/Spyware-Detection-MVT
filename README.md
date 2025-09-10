@@ -70,5 +70,5 @@ MVT generates a report highlighting all suspicious artifacts found in the backup
 > The IOCs were compiled from AI-driven research of real-world spyware cases.
 
 ## 🔹 References
-> https://github.com/mvt-project/mvt
+https://github.com/mvt-project/mvt
 > AI-driven research for STIX2 IOCs.
