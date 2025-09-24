@@ -561,3 +561,50 @@
 
   ]
 }
+{
+  "type": "bundle",
+  "id": "bundle--isoon-android-iocs",
+  "objects": [
+    {
+      "type": "indicator",
+      "id": "indicator--74.120.172.10",
+      "created": "2024-02-20T00:00:00.000Z",
+      "modified": "2024-02-20T00:00:00.000Z",
+      "name": "I-SOON C2 IP",
+      "description": "IP address linked to I-SOON's Treadstone malware controller and ShadowPad C2 servers",
+      "pattern": "[ipv4-addr:value = '74.120.172.10']",
+      "valid_from": "2024-02-20T00:00:00.000Z"
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--mailteso.online",
+      "created": "2024-02-20T00:00:00.000Z",
+      "modified": "2024-02-20T00:00:00.000Z",
+      "name": "I-SOON C2 Domain",
+      "description": "Domain linked to I-SOON's espionage operations",
+      "pattern": "[domain-name:value = 'mailteso.online']",
+      "valid_from": "2024-02-20T00:00:00.000Z"
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--mailnotes.online",
+      "created": "2024-02-20T00:00:00.000Z",
+      "modified": "2024-02-20T00:00:00.000Z",
+      "name": "I-SOON C2 Domain",
+      "description": "Domain linked to I-SOON's espionage operations",
+      "pattern": "[domain-name:value = 'mailnotes.online']",
+      "valid_from": "2024-02-20T00:00:00.000Z"
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--android-cdr-exfiltration",
+      "created": "2024-02-20T00:00:00.000Z",
+      "modified": "2024-02-20T00:00:00.000Z",
+      "name": "Android CDR/LBS Exfiltration",
+      "description": "Behavioral IOC for unauthorized access to call logs, SMS, or location data",
+      "pattern": "[file:path = '/data/data/com.android.providers.telephony/databases/mmssms.db']",
+      "valid_from": "2024-02-20T00:00:00.000Z"
+    }
+  ]
+}
+
